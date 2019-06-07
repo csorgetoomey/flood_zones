@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
     attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
     zoom: 13,
-    maxZoom: 13
+    maxZoom: 16
 });
 
 map.addControl(new mapboxgl.NavigationControl());
