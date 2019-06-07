@@ -24,8 +24,8 @@ map.on('load', function() {
         "type":"circle",
         "source":"evac",
         "paint": {
-            "fill-color": "red",
-            "fill-opacity": .5
+            "circle-color": "green",
+            "circle-opacity": 1
         }
     });
     map.addSource('pop', {
