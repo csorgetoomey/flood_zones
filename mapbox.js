@@ -71,7 +71,7 @@ map.on('load', function() {
         'data': 'GEOJSONS/evacuation_spots.geojson'
     });
     map.addLayer({
-        "id":"Evacuation Spot",
+        "id":"Evacuation Spots",
         "type":"circle",
         "source":"evac",
         "paint": {
@@ -102,7 +102,7 @@ map.on('load', function() {
     });
 });
 
-var toggleableLayerIds = [ 'evacuation', 'population' ];
+var toggleableLayerIds = [ 'Evacuation Spots', 'Population' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
