@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
     attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
     zoom: 13,
-    minZoom: 10,
+    minZoom: 6,
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -75,6 +75,7 @@ map.on('load', function() {
         "type":"circle",
         "source":"evac",
         "paint": {
+            "circle-radius": 4,
             "circle-color": "green",
             "circle-opacity": 1
         }
@@ -90,7 +91,7 @@ map.on('load', function() {
         "paint": {
             'circle-radius': [
                 'interpolate', ['linear'], ['zoom'],
-                10, ['/', ['get', 'total_int'], 100],
+                6, ['/', ['get', 'total_int'], 100],
                 13, ['/', ['get', 'total_int'], 90],
             ],
             "circle-color": "red",
