@@ -6,8 +6,8 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/csorge/cjvhhz99w0jnm1cq3per2445t',
     attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
-    zoom: 10,
-    maxZoom: 17
+    zoom: 13,
+    maxZoom: 13
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -51,6 +51,32 @@ map.on('load', function() {
         'source-layer': 'reduced_flood_risk-2i9a97',
         "paint": {
             "fill-color": "blue",
+            "fill-opacity": .5
+        }
+    });
+    map.addLayer({
+        "id":"coastal",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.5wqgvyhn'
+        },
+        'source-layer': 'coastal_flood_zone-1jktwd',
+        "paint": {
+            "fill-color": "red",
+            "fill-opacity": .5
+        }
+    });
+    map.addLayer({
+        "id":"base_zone",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.bd6ekzso'
+        },
+        'source-layer': 'base_flood_zone-6fnvbr',
+        "paint": {
+            "fill-color": "yellow",
             "fill-opacity": .5
         }
     });
