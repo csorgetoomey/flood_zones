@@ -7,14 +7,66 @@ var map = new mapboxgl.Map({
     attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
     zoom: 13,
-    maxZoom: 16
+    maxZoom: 16,
+    minZoom: 13
 });
 
 map.addControl(new mapboxgl.NavigationControl());
 
 //load geojsons
 map.on('load', function() {
-    //Green Space
+    map.addLayer({
+        "id":"reduced_risk",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.4wdg47x6'
+        },
+        'source-layer': 'reduced_flood_risk-2i9a97',
+        "paint": {
+            "fill-color": "#EFF3FF",
+            "fill-opacity": 1
+        }
+    });
+    map.addLayer({
+        "id":"coastal",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.5wqgvyhn'
+        },
+        'source-layer': 'coastal_flood_zone-1jktwd',
+        "paint": {
+            "fill-color": "6BAED6",
+            "fill-opacity": 1
+        }
+    });
+    map.addLayer({
+        "id":"base_zone",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.bd6ekzso'
+        },
+        'source-layer': 'base_flood_zone-6fnvbr',
+        "paint": {
+            "fill-color": "#2171B5",
+            "fill-opacity": 1
+        }
+    });
+    map.addLayer({
+        "id":"02_pct",
+        "type":"fill",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.bd6ekzso'
+        },
+        'source-layer': 'base_flood_zone-6fnvbr',
+        "paint": {
+            "fill-color": "BDD7E7",
+            "fill-opacity": 1
+        }
+    });
     map.addSource('evac', {
         'type': 'geojson',
         'data': 'GEOJSONS/evacuation_spots.geojson'
@@ -39,45 +91,6 @@ map.on('load', function() {
         "paint": {
             "circle-color": "red",
             "circle-opacity": .5
-        }
-    });
-    map.addLayer({
-        "id":"reduced_risk",
-        "type":"fill",
-        "source":{
-            type: 'vector',
-            url: 'mapbox://csorge.4wdg47x6'
-        },
-        'source-layer': 'reduced_flood_risk-2i9a97',
-        "paint": {
-            "fill-color": "blue",
-            "fill-opacity": .5
-        }
-    });
-    map.addLayer({
-        "id":"coastal",
-        "type":"fill",
-        "source":{
-            type: 'vector',
-            url: 'mapbox://csorge.5wqgvyhn'
-        },
-        'source-layer': 'coastal_flood_zone-1jktwd',
-        "paint": {
-            "fill-color": "red",
-            "fill-opacity": .5
-        }
-    });
-    map.addLayer({
-        "id":"base_zone",
-        "type":"fill",
-        "source":{
-            type: 'vector',
-            url: 'mapbox://csorge.bd6ekzso'
-        },
-        'source-layer': 'base_flood_zone-6fnvbr',
-        "paint": {
-            "fill-color": "yellow",
-            "fill-opacity": .5
         }
     });
 });
