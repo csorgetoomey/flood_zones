@@ -24,7 +24,7 @@ map.on('load', function() {
         'source-layer': 'reduced_flood_risk-2i9a97',
         "paint": {
             "fill-color": "#EFF3FF",
-            "fill-opacity": 1
+            "fill-opacity": .9
         }
     });
     map.addLayer({
@@ -37,7 +37,7 @@ map.on('load', function() {
         'source-layer': 'coastal_flood_zone-1jktwd',
         "paint": {
             "fill-color": "#6BAED6",
-            "fill-opacity": 1
+            "fill-opacity": .9
         }
     });
     map.addLayer({
@@ -50,7 +50,7 @@ map.on('load', function() {
         'source-layer': 'base_flood_zone-6fnvbr',
         "paint": {
             "fill-color": "#2171B5",
-            "fill-opacity": 1
+            "fill-opacity": .9
         }
     });
     map.addLayer({
@@ -63,21 +63,7 @@ map.on('load', function() {
         'source-layer': '02_pct_flood_chance-0u8ckl',
         "paint": {
             "fill-color": "#BDD7E7",
-            "fill-opacity": 1
-        }
-    });
-    map.addSource('evac', {
-        'type': 'geojson',
-        'data': 'GEOJSONS/evacuation_spots.geojson'
-    });
-    map.addLayer({
-        "id":"Evacuation Spots",
-        "type":"circle",
-        "source":"evac",
-        "paint": {
-            "circle-radius": 10,
-            "circle-color": "#008000",
-            "circle-opacity": .7
+            "fill-opacity": .9
         }
     });
     map.addSource('pop', {
@@ -98,6 +84,20 @@ map.on('load', function() {
             "circle-opacity": .7,
             "circle-stroke-color": "black",
             "circle-stroke-width": 1
+        }
+    });
+    map.addSource('evac', {
+        'type': 'geojson',
+        'data': 'GEOJSONS/evacuation_spots.geojson'
+    });
+    map.addLayer({
+        "id":"Evacuation Spots",
+        "type":"circle",
+        "source":"evac",
+        "paint": {
+            "circle-radius": 10,
+            "circle-color": "#008000",
+            "circle-opacity": .7
         }
     });
 });
