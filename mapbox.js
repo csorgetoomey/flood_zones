@@ -21,7 +21,7 @@ map.on('load', function() {
     });
     map.addLayer({
         "id":"evacuation",
-        "type":"point",
+        "type":"circle",
         "source":"evac",
         "paint": {
             "fill-color": "red",
@@ -38,6 +38,19 @@ map.on('load', function() {
         "source":"pop",
         "paint": {
             "fill-color": "red",
+            "fill-opacity": .5
+        }
+    });
+    map.addSource('flood', {
+        'type': 'geojson',
+        'data': 'GEOJSONS/new_orleans_zones.geojson'
+    });
+    map.addLayer({
+        "id":"flood_zones",
+        "type":"fill",
+        "source":"flood",
+        "paint": {
+            "fill-color": "blue",
             "fill-opacity": .5
         }
     });
