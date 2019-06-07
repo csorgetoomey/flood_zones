@@ -6,7 +6,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/csorge/cjvhhz99w0jnm1cq3per2445t',
     attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
-    zoom: 13,
+    zoom: 12,
     minZoom: 10,
 });
 
