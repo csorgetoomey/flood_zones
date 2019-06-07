@@ -5,8 +5,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/csorge/cjvhhz99w0jnm1cq3per2445t',
     attribution: 'Sources: UW Libraries',
-    center: [-122.303200, 47.655548],
-    zoom: 16,
+    center: [-89.971065, 30.004487],
+    zoom: 10,
     maxZoom: 17
 });
 
@@ -15,16 +15,16 @@ map.addControl(new mapboxgl.NavigationControl());
 //load geojsons
 map.on('load', function() {
     //Green Space
-    map.addSource('greenspace', {
+    map.addSource('evac', {
         'type': 'geojson',
-        'data': 'CAMPUS_GEOJSONS/GEOJSON_Landscape.geojson'
+        'data': 'GEOJSONS/evacuation_spots.geojson'
     });
     map.addLayer({
-        "id":"gspace",
+        "id":"evacuation",
         "type":"fill",
-        "source":"greenspace",
+        "source":"evac",
         "paint": {
-            "fill-color": "green",
+            "fill-color": "red",
             "fill-opacity": .5
         }
     });
