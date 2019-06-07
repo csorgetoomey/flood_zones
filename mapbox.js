@@ -77,7 +77,7 @@ map.on('load', function() {
         "paint": {
             'circle-radius': [
                 'interpolate', ['linear'], ['zoom'],
-                10, ['/', ['get', 'total_int'], 1000],
+                10, ['/', ['get', 'total_int'], 500],
                 16, ['/', ['get', 'total_int'], 100],
             ],
             "circle-color": "#ff0000",
