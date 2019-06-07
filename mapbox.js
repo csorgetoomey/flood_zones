@@ -92,8 +92,6 @@ map.on('load', function() {
                 10, ['/', ['get', 'total_int'], 30],
                 13, ['/', ['get', 'total_int'], 10],
             ],
-
-            ['/', ['get', 'total_int'], 70],
             "circle-color": "red",
             "circle-opacity": .8
         }
