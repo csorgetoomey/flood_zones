@@ -21,8 +21,21 @@ map.on('load', function() {
     });
     map.addLayer({
         "id":"evacuation",
-        "type":"fill",
+        "type":"point",
         "source":"evac",
+        "paint": {
+            "fill-color": "red",
+            "fill-opacity": .5
+        }
+    });
+    map.addSource('pop', {
+        'type': 'geojson',
+        'data': 'GEOJSONS/pop_block_groups.geojson'
+    });
+    map.addLayer({
+        "id":"population",
+        "type":"fill",
+        "source":"pop",
         "paint": {
             "fill-color": "red",
             "fill-opacity": .5
