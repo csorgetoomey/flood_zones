@@ -4,7 +4,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3NvcmdlIiwiYSI6ImNqb3A2cGMwMzAxbTkzcW9meDIzM
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/csorge/cjvhhz99w0jnm1cq3per2445t',
-    attribution: 'Sources: UW Libraries',
     center: [-89.971065, 30.004487],
     zoom: 12,
     minZoom: 10,
