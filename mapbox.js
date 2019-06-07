@@ -75,7 +75,7 @@ map.on('load', function() {
         "type":"circle",
         "source":"evac",
         "paint": {
-            "circle-radius": 4,
+            "circle-radius": 10,
             "circle-color": "green",
             "circle-opacity": 1
         }
