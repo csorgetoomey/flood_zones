@@ -59,9 +59,9 @@ map.on('load', function() {
         "type":"fill",
         "source":{
             type: 'vector',
-            url: 'mapbox://csorge.bd6ekzso'
+            url: 'mapbox://csorge.9m2ir9yn'
         },
-        'source-layer': 'base_flood_zone-6fnvbr',
+        'source-layer': '02_pct_flood_chance-0u8ckl',
         "paint": {
             "fill-color": "BDD7E7",
             "fill-opacity": 1
