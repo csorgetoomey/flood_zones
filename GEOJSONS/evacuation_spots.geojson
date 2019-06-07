@@ -1,25 +1,3 @@
-{
-"type": "FeatureCollection",
-"name": "evacuation_spots",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "OBJECTID": 13, "FACNAME": "Arthur Monday Center", "ACCESSRES": "Senior Center Pickup Locations", "Address": "1111 Newton Ave" }, "geometry": { "type": "Point", "coordinates": [ -90.044880337340118, 29.945103349598501 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 14, "FACNAME": "Kingsley House", "ACCESSRES": "Senior Center Pickup Locations", "Address": "1600 Constance St" }, "geometry": { "type": "Point", "coordinates": [ -90.071800052882594, 29.93204580340057 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 15, "FACNAME": "Central City Senior Center", "ACCESSRES": "Senior Center Pickup Locations", "Address": "2101 Philip St." }, "geometry": { "type": "Point", "coordinates": [ -90.084926087443449, 29.936784526820514 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 16, "FACNAME": "Mater Dolorosa", "ACCESSRES": "Senior Center Pickup Locations", "Address": "1226 S. Carrollton Ave" }, "geometry": { "type": "Point", "coordinates": [ -90.129520541523988, 29.948395864389557 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 17, "FACNAME": "Harriet Tubman Charter School", "ACCESSRES": "General  Population Pickup Locations", "Address": "2832 General Meyer" }, "geometry": { "type": "Point", "coordinates": [ -90.026956525700413, 29.942970079050419 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 18, "FACNAME": "Stallings Community Center", "ACCESSRES": "General  Population Pickup Locations", "Address": "4300 St. Claude" }, "geometry": { "type": "Point", "coordinates": [ -90.032354232665952, 29.964556206157326 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 19, "FACNAME": "Louis Armstrong Park Bus Stop", "ACCESSRES": "General  Population Pickup Locations", "Address": "801 N. Rampart" }, "geometry": { "type": "Point", "coordinates": [ -90.069253802090842, 29.961641797971406 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 20, "FACNAME": "Warren Easton High School", "ACCESSRES": "General  Population Pickup Locations", "Address": "3019 Canal St" }, "geometry": { "type": "Point", "coordinates": [ -90.090598307992991, 29.968275135778519 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 21, "FACNAME": "Lyons Community Center", "ACCESSRES": "General  Population Pickup Locations", "Address": "624 Louisiana Ave" }, "geometry": { "type": "Point", "coordinates": [ -90.087160219582643, 29.918733216112557 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 22, "FACNAME": "McMain High School", "ACCESSRES": "General  Population Pickup Locations", "Address": "5712 S. Claiborne Ave" }, "geometry": { "type": "Point", "coordinates": [ -90.111850526139193, 29.942204935940627 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 23, "FACNAME": "Palmer Park", "ACCESSRES": "General  Population Pickup Locations", "Address": "S. Claiborne & S. Carrollton" }, "geometry": { "type": "Point", "coordinates": [ -90.121223644964545, 29.955835196699294 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 24, "FACNAME": "Mary Queen of Vietnam", "ACCESSRES": "General  Population Pickup Locations", "Address": "14001 Dwyer" }, "geometry": { "type": "Point", "coordinates": [ -89.91899211552105, 30.040636935157334 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 25, "FACNAME": "Dryades YMCA", "ACCESSRES": "General  Population Pickup Locations", "Address": "1924 Phillip St" }, "geometry": { "type": "Point", "coordinates": [ -90.084428684539972, 29.936087753990442 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 26, "FACNAME": "New Orleans East Regional Library", "ACCESSRES": "General  Population Pickup Locations", "Address": "5641 Read Blvd" }, "geometry": { "type": "Point", "coordinates": [ -89.972973067063066, 30.032808569553641 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 27, "FACNAME": "Sanchez Center", "ACCESSRES": "General  Population Pickup Locations", "Address": "1616 Caffin Ave" }, "geometry": { "type": "Point", "coordinates": [ -90.014168035739516, 29.966236901005463 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 28, "FACNAME": "Smith Library Bus Stop", "ACCESSRES": "General  Population Pickup Locations", "Address": "6300 Canal Blvd." }, "geometry": { "type": "Point", "coordinates": [ -90.108302540013867, 30.004969235015686 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 29, "FACNAME": "Walmart", "ACCESSRES": "General  Population Pickup Locations", "Address": "4301 Chef Menteur Hwy" }, "geometry": { "type": "Point", "coordinates": [ -90.039876266890488, 30.004271408468277 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 30, "FACNAME": "UPT \/ Amtrak", "ACCESSRES": "Staging Locations", "Address": "1001 Loyola Ave." }, "geometry": { "type": "Point", "coordinates": [ -90.078250304367032, 29.946647920762089 ] } }
-]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:51e03d35c32e228807cfabb00aec9e315b884b9ba3f38c14e4126923ee380426
+size 451923
