@@ -34,11 +34,11 @@ map.on('load', function() {
     });
     map.addLayer({
         "id":"population",
-        "type":"fill",
+        "type":"circle",
         "source":"pop",
         "paint": {
-            "fill-color": "red",
-            "fill-opacity": .5
+            "circle-color": "red",
+            "circle-opacity": .5
         }
     });
     map.addSource('flood', {
