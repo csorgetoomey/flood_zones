@@ -30,7 +30,7 @@ map.on('load', function() {
     });
     map.addSource('pop', {
         'type': 'geojson',
-        'data': 'GEOJSONS/pop_block_groups.geojson'
+        'data': 'GEOJSONS/block_groups_points.geojson'
     });
     map.addLayer({
         "id":"population",
