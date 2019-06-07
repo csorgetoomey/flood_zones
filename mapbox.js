@@ -41,14 +41,14 @@ map.on('load', function() {
             "circle-opacity": .5
         }
     });
-    map.addSource('flood', {
-        'type': 'geojson',
-        'data': 'GEOJSONS/new_orleans_zones.geojson'
-    });
     map.addLayer({
-        "id":"flood_zones",
+        "id":"reduced_risk",
         "type":"fill",
-        "source":"flood",
+        "source":{
+            type: 'vector',
+            url: 'mapbox://csorge.4wdg47x6'
+        },
+        'source-layer': 'reduced_flood_risk-2i9a97',
         "paint": {
             "fill-color": "blue",
             "fill-opacity": .5
