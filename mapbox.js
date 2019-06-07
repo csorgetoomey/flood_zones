@@ -37,7 +37,7 @@ map.on('load', function() {
         },
         'source-layer': 'coastal_flood_zone-1jktwd',
         "paint": {
-            "fill-color": "6BAED6",
+            "fill-color": "#6BAED6",
             "fill-opacity": 1
         }
     });
@@ -63,7 +63,7 @@ map.on('load', function() {
         },
         'source-layer': '02_pct_flood_chance-0u8ckl',
         "paint": {
-            "fill-color": "BDD7E7",
+            "fill-color": "#BDD7E7",
             "fill-opacity": 1
         }
     });
@@ -89,7 +89,7 @@ map.on('load', function() {
         "type":"circle",
         "source":"pop",
         "paint": {
-             'circle-radius': ['get', 'total_int'],
+            'circle-radius': ['/', ['get', 'total_int'], 100],
             "circle-color": "red",
             "circle-opacity": .5
         }
