@@ -77,7 +77,7 @@ map.on('load', function() {
         "paint": {
             "circle-radius": 10,
             "circle-color": "green",
-            "circle-opacity": 1
+            "circle-opacity": .7
         }
     });
     map.addSource('pop', {
@@ -95,7 +95,7 @@ map.on('load', function() {
                 16, ['/', ['get', 'total_int'], 100],
             ],
             "circle-color": "red",
-            "circle-opacity": .8,
+            "circle-opacity": .7,
             "circle-stroke-color": "black",
             "circle-stroke-width": 1
         }
