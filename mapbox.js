@@ -76,7 +76,7 @@ map.on('load', function() {
         "source":"evac",
         "paint": {
             "circle-radius": 10,
-            "circle-color": "green",
+            "circle-color": "#008000",
             "circle-opacity": .7
         }
     });
@@ -94,7 +94,7 @@ map.on('load', function() {
                 10, ['/', ['get', 'total_int'], 150],
                 16, ['/', ['get', 'total_int'], 100],
             ],
-            "circle-color": "red",
+            "circle-color": "#ff0000",
             "circle-opacity": .7,
             "circle-stroke-color": "black",
             "circle-stroke-width": 1
