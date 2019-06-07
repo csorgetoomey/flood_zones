@@ -87,7 +87,13 @@ map.on('load', function() {
         "type":"circle",
         "source":"pop",
         "paint": {
-            'circle-radius': ['/', ['get', 'total_int'], 70],
+            'circle-radius': [
+                'interpolate', ['linear'], ['zoom'],
+                10, ['/', ['get', 'total_int'], 30],
+                13, ['/', ['get', 'total_int'], 10],
+            ],
+
+            ['/', ['get', 'total_int'], 70],
             "circle-color": "red",
             "circle-opacity": .8
         }
@@ -110,7 +116,7 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
         e.stopPropagation();
 
         var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
- 
+
         if (visibility === 'visible') {
             map.setLayoutProperty(clickedLayer, 'visibility', 'none');
             this.className = '';
