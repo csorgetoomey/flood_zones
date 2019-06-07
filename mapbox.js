@@ -89,8 +89,8 @@ map.on('load', function() {
         "paint": {
             'circle-radius': [
                 'interpolate', ['linear'], ['zoom'],
-                10, ['/', ['get', 'total_int'], 30],
-                13, ['/', ['get', 'total_int'], 10],
+                10, ['/', ['get', 'total_int'], 100],
+                13, ['/', ['get', 'total_int'], 50],
             ],
             "circle-color": "red",
             "circle-opacity": .8
