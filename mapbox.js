@@ -89,6 +89,7 @@ map.on('load', function() {
         "type":"circle",
         "source":"pop",
         "paint": {
+             'circle-radius': ['get', 'total_int'],
             "circle-color": "red",
             "circle-opacity": .5
         }
